@@ -188,4 +188,85 @@
                   <div class="modal-notes">
                       <strong>Pyramide Olfactive Approfondie :</strong>
                       <ul>
-                          <li id="modalTete
+                          <li id="modalTete"><strong>Tête :</strong> -</li>
+                          <li id="modalCoeur"><strong>Cœur :</strong> -</li>
+                          <li id="modalFond"><strong>Fond :</strong> -</li>
+                      </ul>
+                  </div>
+
+                  <button type="button" class="btn-custom" id="modalCloseBtn2">Fermer</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- SCRIPT JS UNIFORMISÉ -->
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const modal = document.getElementById('productModal');
+          const closeBtn1 = document.getElementById('modalCloseBtn');
+          const closeBtn2 = document.getElementById('modalCloseBtn2');
+          const discoverBtns = document.querySelectorAll('.btn-discover');
+
+          discoverBtns.forEach(btn => {
+              btn.addEventListener('click', function() {
+                  document.getElementById('modalTitle').textContent = this.dataset.title;
+                  document.getElementById('modalPrice').textContent = this.dataset.price;
+                  document.getElementById('modalDesc').textContent = this.dataset.desc;
+                  document.getElementById('modalConseil').textContent = this.dataset.conseil;
+                  document.getElementById('modalTete').innerHTML = '<strong>Tête :</strong> ' + this.dataset.tete;
+                  document.getElementById('modalCoeur').innerHTML = '<strong>Cœur :</strong> ' + this.dataset.coeur;
+                  document.getElementById('modalFond').innerHTML = '<strong>Fond :</strong> ' + this.dataset.fond;
+                  document.getElementById('modalImg').src = this.dataset.img;
+
+                  modal.classList.add('active');
+              });
+          });
+
+          function closeModal() {
+              modal.classList.remove('active');
+          }
+
+          if (closeBtn1) closeBtn1.addEventListener('click', closeModal);
+          if (closeBtn2) closeBtn2.addEventListener('click', closeModal);
+
+          window.addEventListener('click', function(e) {
+              if (e.target === modal) {
+                  closeModal();
+              }
+          });
+      });
+  </script>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Maison Nocturne</h4>
+                <p>Site vitrine réalisé dans le cadre d'un projet d'études en BTS SIO.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pages du site</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="femme.html">Parfums Femme</a></li>
+                    <li><a href="homme.html">Parfums Homme</a></li>
+                    <li><a href="prive.html">Collection privée</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Informations Légales</h4>
+                <ul>
+                    <li><a href="reglementation.html">Réglementation</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Maison Nocturne — Projet BTS SIO. Tous droits réservés.</p>
+        </div>
+  </footer>
+
+</body>
+</html>
