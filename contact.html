@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Contacter - Maison Nocturne</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Lien vers votre fichier CSS unique -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Petits ajouts spécifiques pour la mise en page contact en 2 colonnes -->
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+            background-color: var(--card-bg);
+            padding: 3rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+        .contact-sidebar h3 {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .contact-sidebar p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .contact-sidebar a {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        .contact-form h2 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        .contact-form .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            background-color: #121212;
+            border: none;
+            border-bottom: 1px solid var(--border-color);
+            color: #fff;
+            padding: 0.75rem 0;
+            font-size: 0.95rem;
+            font-family: inherit;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+            border: 1px solid var(--border-color);
+            padding: 0.75rem;
+            border-radius: 4px;
+        }
+        @media (max-width: 900px) {
+            .contact-layout { grid-template-columns: 1fr; gap: 2rem; padding: 1.5rem; }
+            .form-row { grid-template-columns: 1fr; gap: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="index.html" class="logo">Maison Nocturne</a>
+        
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger-btn" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="offcanvas-menu">
+            <div class="offcanvas-header">
+                <h2>Navigation</h2>
+                <label for="menu-toggle" class="close-btn">&times;</label>
+            </div>
+            <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="homme.html">Homme</a></li>
+    <li><a href="femme.html">Femme</a></li>
+    <li><a href="prive.html">Collection Privée</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+        </nav>
+        
+        <div class="overlay"></div>
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main>
+        <section class="page-header">
+            <h1>Nous Contacter</h1>
+            <p>À votre écoute pour toute question relative à nos créations olfactives</p>
+        </section>
+
+        <div class="contact-layout">
+            
+            <!-- COLONNE GAUCHE : INFOS -->
+            <div class="contact-sidebar">
+                <h3>Informations</h3>
+                <p>Nos Ambassadeurs vous réservent un accueil personnalisé et auront le plaisir de vous accompagner dans votre découverte de la Maison Nocturne.</p>
+                
+                <h3>Nous appeler</h3>
+                <p>Nos conseillers sont à votre écoute :<br>
+                <a href="#">Consultez notre FAQ</a><br><br>
+                Ligne dédiée :<br>
+                <strong>+33 (0)1 49 53 88 88</strong><br><br>
+                Service disponible du lundi au samedi de 9h à 19h.</p>
+
+                <h3>Accès sourd et malentendant</h3>
+                <p>Nous sommes à votre disposition du lundi au vendredi de 10h à 18h en cliquant <a href="#">ici</a>.</p>
+            </div>
+
+            <!-- COLONNE DROITE : FORMULAIRE FONCTIONNEL -->
+            <div class="contact-form">
+                <h2>Nous adresser un email</h2>
+                <p class="subtitle">(*) Les champs marqués d'un astérisque sont obligatoires.</p>
+
+                <!-- Formulaire relié à ton compte Formspree -->
+                <form action="https://formspree.io/f/mqpekjkv" method="POST">
+                    
+                    <div class="form-group">
+                        <label>* Civilité</label>
+                        <select name="civilite" required>
+                            <option value="M.">M.</option>
+                            <option value="Mme">Mme</option>
+                            <option value="Mlle">Mlle</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>* Prénom</label>
+                            <input type="text" name="prenom" required>
+                        </div>
+                        <div class="form-group">
+                            <label>* Nom</label>
+                            <input type="text" name="nom" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>* Pays / Région</label>
+                            <select name="pays">
+                                <option value="France">France</option>
+                                <option value="Belgique">Belgique</option>
+                                <option value="Suisse">Suisse</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>* Langue</label>
+                            <select name="langue">
+                                <option value="Français">Français</option>
+                                <option value="Anglais">Anglais</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>* E-mail</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Téléphone mobile</label>
+                            <input type="tel" name="telephone">
+                        </div>
+                    </div>
+
+                    <h3 style="color: var(--accent-color); font-size: 1.1rem; margin: 2rem 0 1rem 0;">Votre demande</h3>
+
+                    <div class="form-group">
+                        <label>* Objet</label>
+                        <select name="objet" required>
+                            <option value="Information sur les produits">Information sur les produits</option>
+                            <option value="Suivi de commande fictive">Suivi de commande fictive</option>
+                            <option value="Projet BTS SIO / Partenariat">Projet BTS SIO / Partenariat</option>
+                            <option value="Autre demande">Autre demande</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>* Votre message</label>
+                        <textarea name="message" required placeholder="Rédigez votre message ici..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-custom" style="width: 100%; text-align: center; margin-top: 1rem;">ENVOYER</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Maison Nocturne</h4>
+                <p>Site vitrine réalisé dans le cadre d'un projet d'études en BTS SIO.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pages du site</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="femme.html">Parfums Femme</a></li>
+                    <li><a href="homme.html">Parfums Homme</a></li>
+                    <li><a href="prive.html">Collection privée</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Informations Légales</h4>
+                <ul>
+                    <li><a href="reglementation.html">Réglementation</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Maison Nocturne — Projet BTS SIO. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

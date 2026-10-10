@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Nocturne — Parfums Homme</title>
+  
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+  <a href="index.html" class="logo">Maison Nocturne</a>
+
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="burger-btn" aria-label="Ouvrir le menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <label for="menu-toggle" class="overlay"></label>
+
+  <div class="offcanvas-menu">
+    <div class="offcanvas-header">
+      <h2>Menu</h2>
+      <label for="menu-toggle" class="close-btn">&times;</label>
+    </div>
+    <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="homme.html">Homme</a></li>
+    <li><a href="femme.html">Femme</a></li>
+    <li><a href="prive.html">Collection Privée</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+  </div>
+</header>
+
+  <main>
+    <section class="page-header">
+      <h1>Haute Parfumerie Masculine</h1>
+      <p>Découvrez notre sélection de fragrances d'exception conçues pour affirmer votre présence.</p>
+      
+      <div class="filters-bar">
+        <a href="#dior" class="filter-btn">Dior</a>
+        <a href="#ysl" class="filter-btn">Yves Saint Laurent</a>
+        <a href="#guerlain" class="filter-btn">Guerlain</a>
+      </div>
+    </section>
+
+    <!-- SECTION DIOR -->
+    <h2 id="dior" class="category-title">Dior</h2>
+    <article class="product-card">
+      <div class="product-media">
+        <img src="https://kosmeticas.ma/wp-content/uploads/2023/05/Y0998004_E05_GHC.jpg" alt="Sauvage Dior">
+      </div>
+      <div class="product-details">
+        <div class="product-meta">
+          <span class="rating">★ ★ ★ ★ ★ (4.9)</span>
+          <span class="price">135 €</span>
+        </div>
+        <h2>Sauvage — Dior</h2>
+        <p><strong>Sillage d'exception :</strong> Une composition fraîche et boisée, véritable ode aux grands espaces.</p>
+        <div class="notes-list">
+          <div><span>Tête :</span> Bergamote de Calabre</div>
+          <div><span>Cœur :</span> Poivre de Sichuan, Lavande</div>
+          <div><span>Fond :</span> Ambroxan, Cèdre</div>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="btn-custom btn-discover"
+            data-title="Sauvage — Dior"
+            data-price="135 € (Flacon 100 ml)"
+            data-desc="Inspiré des grands espaces ouverts sous un ciel nocturne zébré d'éclairs, ce parfum associe une fraîcheur radiante à une puissance animale brute. Son sillage puissant laisse une empreinte inoubliable."
+            data-conseil="Vaporisez à 20 cm de la peau en insistant sur les points de pulsation : poignets, intérieur des coudes et cou."
+            data-tete="Bergamote de Calabre, Poivre rose"
+            data-coeur="Poivre de Sichuan, Lavande, Géranium"
+            data-fond="Ambroxan, Cèdre de Virginie, Résine d'élémi"
+            data-img="https://kosmeticas.ma/wp-content/uploads/2023/05/Y0998004_E05_GHC.jpg">
+            Découvrir
+          </button>
+          <button class="btn-secondary">Ajouter au panier</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- SECTION YVES SAINT LAURENT -->
+    <h2 id="ysl" class="category-title">Yves Saint Laurent</h2>
+    <article class="product-card reverse">
+      <div class="product-media">
+        <img src="https://images.matas.dk/trs/w1300/encode/3614273852821_3_20231211155445.jpg" alt="Nuit de l'Homme YSL">
+      </div>
+      <div class="product-details">
+        <div class="product-meta">
+          <span class="rating">★ ★ ★ ★ ☆ (4.7)</span>
+          <span class="price">120 €</span>
+        </div>
+        <h2>Nuit de l'Homme — YSL</h2>
+        <p><strong>Inspiration nocturne :</strong> Un accord boisé et spécialement pensé pour les séducteurs audacieux.</p>
+        <div class="notes-list">
+          <div><span>Tête :</span> Cardamome</div>
+          <div><span>Cœur :</span> Bergamote, Cèdre de Virginie</div>
+          <div><span>Fond :</span> Vétiver, Fève Tonka</div>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="btn-custom btn-discover"
+            data-title="Nuit de l'Homme — YSL"
+            data-price="120 € (Flacon 100 ml)"
+            data-desc="Une tension ténébreuse entre fraîcheur et sensualité. Un parfum taillé pour les nuits urbaines mystérieuses, mêlant l'élégance parisienne et la séduction brute."
+            data-conseil="Idéal pour les soirées et les rendez-vous. Appliquer directement sur le cou et le haut de la poitrine pour une diffusion optimale."
+            data-tete="Cardamome noire, Bergamote"
+            data-coeur="Cèdre de Virginie, Lavande française"
+            data-fond="Vétiver d'Haïti, Fève Tonka, Cumin"
+            data-img="https://images.matas.dk/trs/w1300/encode/3614273852821_3_20231211155445.jpg">
+            Découvrir
+          </button>
+          <button class="btn-secondary">Ajouter au panier</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- SECTION GUERLAIN -->
+    <h2 id="guerlain" class="category-title">Guerlain</h2>
+    <article class="product-card">
+      <div class="product-media">
+        <img src="https://hrd-live.cdn.scayle.cloud/images/d75ee874e52888c1051177e7b9251978.jpg?brightness=1&width=768&height=1024&quality=75&bg=ffffff" alt="L'Homme Idéal Guerlain">
+      </div>
+      <div class="product-details">
+        <div class="product-meta">
+          <span class="rating">★ ★ ★ ★ ★ (4.8)</span>
+          <span class="price">128 €</span>
+        </div>
+        <h2>L'Homme Idéal — Guerlain</h2>
+        <p><strong>Charme intemporel :</strong> L'alliance captivante de l'amande douce et du cuir boisé noble.</p>
+        <div class="notes-list">
+          <div><span>Tête :</span> Agrumes, Fleur d'oranger</div>
+          <div><span>Cœur :</span> Amande, Fève Tonka</div>
+          <div><span>Fond :</span> Cuir, Cèdre, Vétiver</div>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="btn-custom btn-discover"
+            data-title="L'Homme Idéal — Guerlain"
+            data-price="128 € (Flacon 100 ml)"
+            data-desc="L'homme idéal est un mythe, mais son parfum est une réalité. Une fragrance boisée orientale qui réunit l'intelligence des agrumes, le magnétisme de l'amande et la force d'un cuir boisé."
+            data-conseil="Pour une tenue longue durée tout au long de la journée, vaporiser sur les vêtements en coton ou sur les poignets."
+            data-tete="Agrumes pétillants, Fleur d'oranger, Romarin"
+            data-coeur="Amande enivrante, Fève Tonka"
+            data-fond="Cuir noble, Bois de cèdre, Vétiver des Indes"
+            data-img="https://hrd-live.cdn.scayle.cloud/images/d75ee874e52888c1051177e7b9251978.jpg?brightness=1&width=768&height=1024&quality=75&bg=ffffff">
+            Découvrir
+          </button>
+          <button class="btn-secondary">Ajouter au panier</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- REASSURANCE -->
+    <section class="reassurance">
+      <div class="reassurance-item">
+        <h3>Livraison Offerte</h3>
+        <p>Dès 90 € d'achat en France métropolitaine.</p>
+      </div>
+      <div class="reassurance-item">
+        <h3>Échantillons Gratuits</h3>
+        <p>2 échantillons offerts dans chaque commande.</p>
+      </div>
+      <div class="reassurance-item">
+        <h3>Paiement Sécurisé</h3>
+        <p>Par carte bancaire, PayPal ou Apple Pay.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FENÊTRE POP-UP (MODALE) MIS À JOUR -->
+  <div class="modal-overlay" id="productModal">
+      <div class="modal-card">
+          <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Fermer">&times;</button>
+          <div class="modal-body">
+              <img id="modalImg" src="" alt="Flacon Parfum">
+              <div class="modal-info">
+                  <h2 id="modalTitle">Nom du Parfum</h2>
+                  <div class="modal-price" id="modalPrice">0 €</div>
+                  
+                  <!-- Histoire / Storytelling exclusif -->
+                  <p id="modalDesc">Description détaillée...</p>
+                  
+                  <!-- Conseil d'application exclusif -->
+                  <div class="modal-notes" style="border-left-color: #fff; margin-bottom: 1rem;">
+                      <strong>Conseil d'application :</strong>
+                      <p id="modalConseil" style="margin: 0.3rem 0 0 0; color: var(--text-secondary); font-size: 0.85rem;"></p>
+                  </div>
+
+                  <!-- Pyramide détaillée -->
+                  <div class="modal-notes">
+                      <strong>Pyramide Olfactive Approfondie :</strong>
+                      <ul>
+                          <li id="modalTete"><strong>Tête :</strong> -</li>
+                          <li id="modalCoeur"><strong>Cœur :</strong> -</li>
+                          <li id="modalFond"><strong>Fond :</strong> -</li>
+                      </ul>
+                  </div>
+
+                  <button type="button" class="btn-custom" id="modalCloseBtn2">Fermer</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- SCRIPT JS POUR LA MODALE -->
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const modal = document.getElementById('productModal');
+          const closeBtn1 = document.getElementById('modalCloseBtn');
+          const closeBtn2 = document.getElementById('modalCloseBtn2');
+          const discoverBtns = document.querySelectorAll('.btn-discover');
+
+          discoverBtns.forEach(btn => {
+              btn.addEventListener('click', function() {
+                  document.getElementById('modalTitle').textContent = this.dataset.title;
+                  document.getElementById('modalPrice').textContent = this.dataset.price;
+                  document.getElementById('modalDesc').textContent = this.dataset.desc;
+                  document.getElementById('modalConseil').textContent = this.dataset.conseil;
+                  document.getElementById('modalTete').innerHTML = '<strong>Tête :</strong> ' + this.dataset.tete;
+                  document.getElementById('modalCoeur').innerHTML = '<strong>Cœur :</strong> ' + this.dataset.coeur;
+                  document.getElementById('modalFond').innerHTML = '<strong>Fond :</strong> ' + this.dataset.fond;
+                  document.getElementById('modalImg').src = this.dataset.img;
+
+                  modal.classList.add('active');
+              });
+          });
+
+          function closeModal() {
+              modal.classList.remove('active');
+          }
+
+          if (closeBtn1) closeBtn1.addEventListener('click', closeModal);
+          if (closeBtn2) closeBtn2.addEventListener('click', closeModal);
+
+          window.addEventListener('click', function(e) {
+              if (e.target === modal) {
+                  closeModal();
+              }
+          });
+      });
+  </script>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Maison Nocturne</h4>
+                <p>Site vitrine réalisé dans le cadre d'un projet d'études en BTS SIO.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pages du site</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="femme.html">Parfums Femme</a></li>
+                    <li><a href="homme.html">Parfums Homme</a></li>
+                    <li><a href="prive.html">Collection privée</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Informations Légales</h4>
+                <ul>
+                    <li><a href="reglementation.html">Réglementation</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Maison Nocturne — Projet BTS SIO. Tous droits réservés.</p>
+        </div>
+  </footer>
+
+</body>
+</html>

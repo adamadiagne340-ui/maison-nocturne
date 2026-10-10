@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Nocturne — Parfums Femme</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <a href="index.html" class="logo">Maison Nocturne</a>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="burger-btn" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </label>
+    <label for="menu-toggle" class="overlay"></label>
+    <div class="offcanvas-menu">
+      <div class="offcanvas-header">
+        <h2>Menu</h2>
+        <label for="menu-toggle" class="close-btn">&times;</label>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="homme.html">Homme</a></li>
+        <li><a href="femme.html" class="active">Femme</a></li>
+        <li><a href="prive.html">Collection Privée</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Haute Parfumerie Féminine</h1>
+      <p>Découvrez notre sélection de fragrances d'exception conçues pour sublimer votre élégance.</p>
+      
+      <!-- LIENS D'ANCRE VERS CHAQUE MARQUE -->
+      <div class="filters-bar">
+        <a href="#dior" class="filter-btn">Dior</a>
+        <a href="#ysl" class="filter-btn">Yves Saint Laurent</a>
+        <a href="#guerlain" class="filter-btn">Guerlain</a>
+      </div>
+    </section>
+
+    <!-- SECTION DIOR -->
+    <h2 id="dior" class="category-title">Dior</h2>
+    <article class="product-card">
+      <div class="product-media">
+        <img src="https://media.sephora.eu/content/dam/gdam/europe/digital/pim/published/D/DIOR/824840/412132-media_swatch-1.jpeg?scaleWidth=750&scaleHeight=750&scaleMode=fit" alt="Miss Dior">
+      </div>
+      <div class="product-details">
+        <div class="product-meta">
+          <span class="rating">★ ★ ★ ★ ★ (4.9)</span>
+          <span class="price">145 €</span>
+        </div>
+        <h2>Miss Dior</h2>
+        <p><strong>Sillage d'exception :</strong> Un bouquet floral grandiose et équilibré, symbole de la féminité absolue.</p>
+        <div class="notes-list">
+          <div><span>Tête :</span> Ylang-Ylang des Comores</div>
+          <div><span>Cœur :</span> Rose Damascena</div>
+          <div><span>Fond :</span> Jasmin de Grasse et Sambac</div>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="btn-custom btn-discover"
+            data-title="Miss Dior"
+            data-price="145 € (Flacon 100 ml)"
+            data-desc="Un bouquet floral grandiose et équilibré, symbole de la féminité absolue. Une déclaration d'amour olfactive sensuelle et raffinée inspirée des fleurs de Grasse."
+            data-conseil="Vaporisez à 20 cm de la peau en insistant sur les points de pulsation : le creux des poignets, derrière les oreilles et le décolleté."
+            data-tete="Ylang-Ylang des Comores, Mandarine"
+            data-coeur="Rose Damascena, Rose de Mai"
+            data-fond="Jasmin de Grasse, Jasmin Sambac, Bois de Rose"
+            data-img="https://media.sephora.eu/content/dam/gdam/europe/digital/pim/published/D/DIOR/824840/412132-media_swatch-1.jpeg?scaleWidth=750&scaleHeight=750&scaleMode=fit">
+            Découvrir
+          </button>
+          <button class="btn-secondary">Ajouter au panier</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- SECTION YVES SAINT LAURENT -->
+    <h2 id="ysl" class="category-title">Yves Saint Laurent</h2>
+    <article class="product-card reverse">
+      <div class="product-media">
+        <img src="https://media.sephora.eu/content/dam/gdam/europe/digital/pim/published/Y/YVES_SAINT_LAURENT/P10010558/54040-media_2-0.jpg" alt="YSL LIBRE">
+      </div>
+      <div class="product-details">
+        <div class="product-meta">
+          <span class="rating">★ ★ ★ ★ ☆ (4.8)</span>
+          <span class="price">130 €</span>
+        </div>
+        <h2>YSL LIBRE</h2>
+        <p><strong>Inspiration nocturne :</strong> Une fragrance gourmande et enivrante, parfaite pour les femmes audacieuses.</p>
+        <div class="notes-list">
+          <div><span>Tête :</span> Café Noir</div>
+          <div><span>Cœur :</span> Fleurs Blanches, Fleur d'Oranger</div>
+          <div><span>Fond :</span> Vanille, Cèdre, Patchouli</div>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="btn-custom btn-discover"
+            data-title="YSL LIBRE"
+            data-price="130 € (Flacon 90 ml)"
+            data-desc="Une fragrance gourmande et enivrante, parfaite pour les femmes audacieuses. La tension entre la sensualité brûlante de la fleur d'oranger et l'audace du café noir."
+            data-conseil="Appliquez directement sur les vêtements ou dans la chevelure pour diffuser un sillage captivant tout au long de la soirée."
+            data-tete="Café Noir, Essence de Mandarine"
+            data-coeur="Fleurs Blanches, Fleur d'Oranger du Maroc, Lavande"
+            data-fond="Vanille de Madagascar, Cèdre, Patchouli"
+            data-img="https://media.sephora.eu/content/dam/gdam/europe/digital/pim/published/Y/YVES_SAINT_LAURENT/P10010558/54040-media_2-0.jpg">
+            Découvrir
+          </button>
+          <button class="btn-secondary">Ajouter au panier</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- SECTION GUERLAIN -->
+    <h2 id="guerlain" class="category-title">Guerlain</h2>
+    <article class="product-card">
+      <div class="product-media">
+        <img src="https://cdn.notinoimg.com/detail_main_mq/guerlain/3346470143944_03/aqua-allegoria-mandarine-basilic___250411.jpg" alt="Aqua Allegoria">
+      </div>
+      <div class="product-details">
+        <div class="product-meta">
+          <span class="rating">★ ★ ★ ★ ★ (4.9)</span>
+          <span class="price">138 €</span>
+        </div>
+        <h2>Aqua Allegoria</h2>
+        <p><strong>Charme intemporel :</strong> Une création orientale raffinée, hommage à la féminité moderne et libre.</p>
+        <div class="notes-list">
+          <div><span>Tête :</span> Lavande Carla, Bergamote</div>
+          <div><span>Cœur :</span> Jasmin Sambac, Iris</div>
+          <div><span>Fond :</span> Vanille Tahitensis, Santal</div>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="btn-custom btn-discover"
+            data-title="Aqua Allegoria"
+            data-price="138 € (Flacon 125 ml)"
+            data-desc="Une création orientale raffinée, hommage à la féminité moderne et libre. Une alliance délicate entre fraîcheur hespéridée pétillante et chaleur ambrée enveloppante."
+            data-conseil="Vaporisez généreusement en nuage devant vous et traversez-le pour vous imprégner uniformément du parfum."
+            data-tete="Lavande Carla, Bergamote de Calabre, Clementine"
+            data-coeur="Jasmin Sambac, Iris, Basilic frais"
+            data-fond="Vanille Tahitensis, Bois de Santal d'Australie"
+            data-img="https://cdn.notinoimg.com/detail_main_mq/guerlain/3346470143944_03/aqua-allegoria-mandarine-basilic___250411.jpg">
+            Découvrir
+          </button>
+          <button class="btn-secondary">Ajouter au panier</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- REASSURANCE -->
+    <section class="reassurance">
+      <div class="reassurance-item">
+        <h3>Livraison Offerte</h3>
+        <p>Dès 90 € d'achat en France métropolitaine.</p>
+      </div>
+      <div class="reassurance-item">
+        <h3>Échantillons Gratuits</h3>
+        <p>2 échantillons offerts dans chaque commande.</p>
+      </div>
+      <div class="reassurance-item">
+        <h3>Paiement Sécurisé</h3>
+        <p>Par carte bancaire, PayPal ou Apple Pay.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FENÊTRE POP-UP (MODALE) HARMONISÉE -->
+  <div class="modal-overlay" id="productModal">
+      <div class="modal-card">
+          <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Fermer la fenêtre">&times;</button>
+          <div class="modal-body">
+              <img id="modalImg" src="" alt="Flacon Parfum">
+              <div class="modal-info">
+                  <h2 id="modalTitle">Nom du Parfum</h2>
+                  <div class="modal-price" id="modalPrice">0 €</div>
+                  <p id="modalDesc">Description détaillée du parfum...</p>
+                  
+                  <!-- Conseil d'application -->
+                  <div class="modal-notes" style="border-left-color: #fff; margin-bottom: 1rem;">
+                      <strong>Conseil d'application :</strong>
+                      <p id="modalConseil" style="margin: 0.3rem 0 0 0; color: var(--text-secondary); font-size: 0.85rem;"></p>
+                  </div>
+
+                  <!-- Pyramide Olfactive -->
+                  <div class="modal-notes">
+                      <strong>Pyramide Olfactive Approfondie :</strong>
+                      <ul>
+                          <li id="modalTete"><strong>Tête :</strong> -</li>
+                          <li id="modalCoeur"><strong>Cœur :</strong> -</li>
+                          <li id="modalFond"><strong>Fond :</strong> -</li>
+                      </ul>
+                  </div>
+
+                  <button type="button" class="btn-custom" id="modalCloseBtn2">Fermer</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- SCRIPT JS MIS À JOUR -->
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const modal = document.getElementById('productModal');
+          const closeBtn1 = document.getElementById('modalCloseBtn');
+          const closeBtn2 = document.getElementById('modalCloseBtn2');
+          const discoverBtns = document.querySelectorAll('.btn-discover');
+
+          discoverBtns.forEach(btn => {
+              btn.addEventListener('click', function() {
+                  document.getElementById('modalTitle').textContent = this.dataset.title;
+                  document.getElementById('modalPrice').textContent = this.dataset.price;
+                  document.getElementById('modalDesc').textContent = this.dataset.desc;
+                  document.getElementById('modalConseil').textContent = this.dataset.conseil;
+                  document.getElementById('modalTete').innerHTML = '<strong>Tête :</strong> ' + this.dataset.tete;
+                  document.getElementById('modalCoeur').innerHTML = '<strong>Cœur :</strong> ' + this.dataset.coeur;
+                  document.getElementById('modalFond').innerHTML = '<strong>Fond :</strong> ' + this.dataset.fond;
+                  document.getElementById('modalImg').src = this.dataset.img;
+
+                  modal.classList.add('active');
+              });
+          });
+
+          function closeModal() {
+              modal.classList.remove('active');
+          }
+
+          if (closeBtn1) closeBtn1.addEventListener('click', closeModal);
+          if (closeBtn2) closeBtn2.addEventListener('click', closeModal);
+
+          window.addEventListener('click', function(e) {
+              if (e.target === modal) {
+                  closeModal();
+              }
+          });
+      });
+  </script>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Maison Nocturne</h4>
+                <p>Site vitrine réalisé dans le cadre d'un projet d'études en BTS SIO.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pages du site</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="femme.html">Parfums Femme</a></li>
+                    <li><a href="homme.html">Parfums Homme</a></li>
+                    <li><a href="prive.html">Collection privée</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Informations Légales</h4>
+                <ul>
+                    <li><a href="reglementation.html">Réglementation</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Maison Nocturne — Projet BTS SIO. Tous droits réservés.</p>
+        </div>
+  </footer>
+
+</body>
+</html>
